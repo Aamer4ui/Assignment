@@ -1,0 +1,64 @@
+.profile-container {
+    /* Your styles */
+  }
+  
+  .salary-tabs {
+    display: flex;
+    gap: 11px;
+    margin-bottom: 10px;
+  }
+  
+  .tab-button {
+    background-color: #ccc;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .tab-button.active {
+    background-color: #07305c !important; /* Change this to the desired color */
+    color: #fff !important;
+  }
+  
+  .salary-picker {
+    /* Your styles */
+  }
+  
+  .switch-toggle {
+    /* Your styles */
+  }
+  
+  .switch-toggle .switch {
+    /* Your styles */
+  }
+  
+  /* Additional CSS for the switch toggle styling */
+  .switch-toggle input[type="checkbox"] {
+    display: none;
+  }
+  
+  .switch-toggle .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 28px;
+    background-color: #ccc;
+    border-radius: 17px;
+  }
+  
+  .switch-toggle .switch::before {
+    position: absolute;
+    content: "";
+    height: 21px;
+    width: 21px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    border-radius: 50%;
+    transition: all 0.3s;
+  }
+  
+  .switch-toggle input[type="checkbox"]:checked + .switch::before {
+    transform: translateX(26px);
+  }
+  
